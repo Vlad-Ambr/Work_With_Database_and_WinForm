@@ -56,7 +56,6 @@
             resources.ApplyResources(menuStrip1, "menuStrip1");
             menuStrip1.Name = "menuStrip1";
             menuStrip1.RenderMode = ToolStripRenderMode.System;
-            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
             // toolStripMenuItem1
             // 
@@ -77,7 +76,6 @@
             toolStripMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem3, ukranianToolStripMenuItem, spanishToolStripMenuItem, germanToolStripMenuItem, frenchToolStripMenuItem });
             toolStripMenuItem2.Name = "toolStripMenuItem2";
             resources.ApplyResources(toolStripMenuItem2, "toolStripMenuItem2");
-            toolStripMenuItem2.Click += toolStripMenuItem2_Click;
             // 
             // toolStripMenuItem3
             // 
@@ -159,7 +157,6 @@
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Load += Form1_Load;
-            SizeChanged += Form1_SizeChanged;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             panel1.ResumeLayout(false);
