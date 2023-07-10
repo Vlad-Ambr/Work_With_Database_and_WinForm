@@ -16,5 +16,11 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+        public UserControl1(int id, string login, string password) : this()
+        {
+            this.textBox1.Text = id.ToString();
+            this.textBox2.Text = login;
+            this.textBox3.Text = password;
+        }
     }
 }
